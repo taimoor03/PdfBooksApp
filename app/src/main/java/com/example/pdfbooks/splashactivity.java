@@ -19,13 +19,10 @@ public class splashactivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splashactivity);
         Objects.requireNonNull(getSupportActionBar()).hide();
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                Intent intent=new Intent(splashactivity.this, LoginActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        },6000);
+        new Handler().postDelayed(() -> {
+            Intent intent=new Intent(splashactivity.this, LoginActivity.class);
+            startActivity(intent);
+            finish();
+        },1000);
     }
 }

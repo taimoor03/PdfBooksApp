@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "588072957727",
+    "project_id": "user-authentication-4022f",
+    "storage_bucket": "user-authentication-4022f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:588072957727:android:a03f614f6b2149cffd622a",
+        "android_client_info": {
+          "package_name": "com.example.pdfbooks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "588072957727-n1aajm45kk59m59qnvr4as0amo5fn659.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHgw0Bfj1iDYyode2lG4-abT_hqOue9oY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "588072957727-n1aajm45kk59m59qnvr4as0amo5fn659.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

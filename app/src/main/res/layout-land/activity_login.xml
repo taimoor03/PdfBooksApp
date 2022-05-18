@@ -39,7 +39,7 @@
                 android:textColor="#0F89EA"
                 android:textSize="24sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress"
+                app:layout_constraintBottom_toTopOf="@+id/email_input"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -55,14 +55,14 @@
                 android:textColor="#0F89EA"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress"
+                app:layout_constraintBottom_toTopOf="@+id/email_input"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
             <EditText
-                android:id="@+id/editTextTextEmailAddress"
+                android:id="@+id/email_input"
                 android:layout_width="0dp"
                 android:layout_height="45dp"
                 android:layout_marginStart="25dp"
@@ -77,7 +77,7 @@
                 android:inputType="textEmailAddress"
                 android:paddingBottom="15dp"
                 android:textColor="#000000"
-                app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
+                app:layout_constraintBottom_toTopOf="@+id/Password_input"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -97,7 +97,7 @@
                 android:textColor="#0F89EA"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
+                app:layout_constraintBottom_toTopOf="@+id/Password_input"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -105,7 +105,7 @@
                 app:layout_constraintVertical_bias="0.538" />
 
             <EditText
-                android:id="@+id/editTextTextPassword"
+                android:id="@+id/Password_input"
                 android:layout_width="0dp"
                 android:layout_height="45dp"
                 android:layout_marginStart="25dp"
@@ -122,7 +122,7 @@
 
                 android:singleLine="true"
                 android:textColor="#000000"
-                app:layout_constraintBottom_toTopOf="@+id/button"
+                app:layout_constraintBottom_toTopOf="@+id/signin_btn"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -131,7 +131,7 @@
                 tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/signin_btn"
                 android:layout_width="120dp"
                 android:layout_height="45dp"
                 android:layout_marginStart="70dp"
@@ -166,7 +166,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.605"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/button" />
+                app:layout_constraintTop_toBottomOf="@+id/signin_btn" />
 
             <TextView
                 android:id="@+id/textView9"
@@ -177,14 +177,14 @@
                 android:textColor="#1588E4"
                 android:textSize="14sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/button"
+                app:layout_constraintBottom_toTopOf="@+id/signin_btn"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.899"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+                app:layout_constraintTop_toBottomOf="@+id/Password_input" />
 
             <CheckBox
-                android:id="@+id/checkBox"
+                android:id="@+id/remember_me"
                 android:layout_width="wrap_content"
                 android:layout_height="45dp"
                 android:buttonTint="#A9ACA5"
@@ -193,11 +193,11 @@
                 android:textColor="#1A92F1"
                 android:textSize="14sp"
                 android:textStyle="normal|bold"
-                app:layout_constraintBottom_toTopOf="@+id/button"
+                app:layout_constraintBottom_toTopOf="@+id/signin_btn"
                 app:layout_constraintEnd_toStartOf="@+id/textView9"
                 app:layout_constraintHorizontal_bias="0.267"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+                app:layout_constraintTop_toBottomOf="@+id/Password_input"
                 app:layout_constraintVertical_bias="0.0"
                 tools:ignore="TouchTargetSizeCheck" />
 
@@ -246,7 +246,7 @@
         android:layout_marginStart="232dp"
         android:fontFamily="@font/amethysta"
         android:text="@string/don_t_have_an_account"
-        android:textColor="#000000"
+        android:textColor="#FFFFFF"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -262,7 +262,7 @@
         android:layout_marginEnd="240dp"
         android:fontFamily="@font/amethysta"
         android:text="@string/sign_up"
-        android:textColor="#000000"
+        android:textColor="#FFFFFF"
         android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
