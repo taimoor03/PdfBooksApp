@@ -3,6 +3,7 @@ pluginManagement {
         gradlePluginPortal()
         google()
         mavenCentral()
+        //maven { url "http://jcenter.bintray.com" }
     }
 }
 dependencyResolutionManagement {
@@ -10,6 +11,9 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        gradlePluginPortal()
+
+
     }
 }
 rootProject.name = "Pdf Books"

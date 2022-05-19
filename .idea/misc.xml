@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/dazzl/AndroidStudioProjects/PdfBooks/app/src/main/res/drawable/android.xml" value="0.1845" />
         <entry key="..\:/Users/dazzl/AndroidStudioProjects/PdfBooks/app/src/main/res/drawable/back_color.xml" value="0.1475" />
         <entry key="..\:/Users/dazzl/AndroidStudioProjects/PdfBooks/app/src/main/res/drawable/roundbutton.xml" value="0.1" />
         <entry key="..\:/Users/dazzl/AndroidStudioProjects/PdfBooks/app/src/main/res/layout-land/activity_login.xml" value="0.25" />
@@ -10,9 +11,11 @@
         <entry key="..\:/Users/dazzl/AndroidStudioProjects/PdfBooks/app/src/main/res/layout-v21/activity_login.xml" value="0.25" />
         <entry key="..\:/Users/dazzl/AndroidStudioProjects/PdfBooks/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.13119143239625167" />
         <entry key="..\:/Users/dazzl/AndroidStudioProjects/PdfBooks/app/src/main/res/layout-w936dp/activity_login.xml" value="0.18" />
-        <entry key="..\:/Users/dazzl/AndroidStudioProjects/PdfBooks/app/src/main/res/layout/activity_login.xml" value="0.25" />
-        <entry key="..\:/Users/dazzl/AndroidStudioProjects/PdfBooks/app/src/main/res/layout/activity_main.xml" value="0.5" />
-        <entry key="..\:/Users/dazzl/AndroidStudioProjects/PdfBooks/app/src/main/res/layout/activity_signup.xml" value="0.2" />
+        <entry key="..\:/Users/dazzl/AndroidStudioProjects/PdfBooks/app/src/main/res/layout/activity_login.xml" value="0.22" />
+        <entry key="..\:/Users/dazzl/AndroidStudioProjects/PdfBooks/app/src/main/res/layout/activity_main.xml" value="0.1675929884566054" />
+        <entry key="..\:/Users/dazzl/AndroidStudioProjects/PdfBooks/app/src/main/res/layout/activity_signup.xml" value="0.5" />
+        <entry key="..\:/Users/dazzl/AndroidStudioProjects/PdfBooks/app/src/main/res/layout/item_books.xml" value="0.5" />
+        <entry key="..\:/Users/dazzl/AndroidStudioProjects/PdfBooks/app/src/main/res/layout/pdfviewver.xml" value="0.20729684908789386" />
         <entry key="..\:/Users/dazzl/AndroidStudioProjects/PdfBooks/app/src/main/res/layout/splashactivity.xml" value="0.14" />
       </map>
     </option>

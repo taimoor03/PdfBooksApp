@@ -20,7 +20,7 @@ public class splashactivity extends AppCompatActivity {
         setContentView(R.layout.splashactivity);
         Objects.requireNonNull(getSupportActionBar()).hide();
         new Handler().postDelayed(() -> {
-            Intent intent=new Intent(splashactivity.this, LoginActivity.class);
+            Intent intent=new Intent(splashactivity.this, MainActivity.class);
             startActivity(intent);
             finish();
         },1000);
