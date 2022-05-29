@@ -3,15 +3,15 @@ package com.example.pdfbooks.adapter;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
-
-import androidx.annotation.NonNull;
-import androidx.cardview.widget.CardView;
-import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.pdfbooks.R;
 import com.example.pdfbooks.models.Product;
@@ -57,16 +57,22 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
 
         holder.imageView.setImageDrawable(mCtx.getResources().getDrawable(product.getImage()));
 
-        holder.cardView.setOnClickListener(v -> {
+        holder.imageView.setOnClickListener(v-> {
 
             Intent i = new Intent(v.getContext(), pdf.class);
             i.putExtra("title",productList.get(position).getTitle());
             i.putExtra("product",productList.get(position).getTitle());
             i.putExtra("link",productList.get(position).getLink());
-            mCtx.startActivity(i);
+            mCtx.startActivity(i)
+
+            ;
 
         });
-    }
+                }
+       // holder.cardView.setOnClickListener(v -> {
+
+
+
 
 
     @Override
@@ -80,9 +86,10 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
         TextView textViewTitle;
         ImageView imageView;
         CardView cardView;
+
         public ProductViewHolder(View itemView) {
             super(itemView);
-           // cardView = itemView.findViewById(R.id.cardview);// card intial
+            cardView = itemView.findViewById(R.id.cardview2);       // card intial
             textViewTitle = itemView.findViewById(R.id.book_title);
             imageView = itemView.findViewById(R.id.book_cover);
         }

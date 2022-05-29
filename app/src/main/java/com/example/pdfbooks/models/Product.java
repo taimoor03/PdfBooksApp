@@ -1,9 +1,9 @@
 package com.example.pdfbooks.models;
 
 public class Product {
-    private int id;
-    private String title;
-    private int image;
+    private final int id;
+    private final String title;
+    private final int image;
     private String link;
 
 

@@ -7,6 +7,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
@@ -40,12 +41,14 @@ public class pdf extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setTitle(productList);
         pdfView=findViewById(R.id.pdfv);
-        // pdfView.fromAsset(link).load();
+         pdfView.fromAsset(link).load();
 
 
 
         if (isConnected()) {
-            Toast.makeText(getApplicationContext(), "Internet Connected", Toast.LENGTH_SHORT).show();
+          //  Toast.makeText(getApplicationContext(), "Internet Connected", Toast.LENGTH_SHORT).show();
+
+
         } else {
             Toast.makeText(getApplicationContext(), "No Internet Connection", Toast.LENGTH_SHORT).show();
 
@@ -132,4 +135,6 @@ public class pdf extends AppCompatActivity {
         return false;
     }
 }
+
+
 

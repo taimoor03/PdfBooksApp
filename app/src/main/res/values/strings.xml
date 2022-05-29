@@ -26,4 +26,14 @@
     <string name="password_name">Password</string>
     <string name="_03xxxxxxxxx">03XXXXXXXXX</string>
     <string name="create_your_account">Create Your Account</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="enter">Enter the email associated with your account and we  will send an email with instructions to reset your password.</string>
+    <string name="enter_the_email_associated_with_your_account_and_we_will_send_an_email_with_instructions_to_reset_your_password">Enter the email associated with your account and we will send an email with instructions to reset your password.</string>
+    <string name="email_address">Email Address</string>
+    <string name="reseet_password">Reset Password</string>
+    <string name="todo">TODO</string>
+    <string name="log_in">Log In</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="sign__up">Sign Up</string>
 </resources>

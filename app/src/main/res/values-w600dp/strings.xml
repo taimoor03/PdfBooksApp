@@ -11,4 +11,6 @@
     <string name="don_t_have_an_account">Don\'t Have an account?</string>
     <string name="sign_up">Sign Up</string>
     <string name="username">UserName</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="enter">Enter the email associated with your account and we  will send an email with instructions to reset your password.</string>
 </resources>

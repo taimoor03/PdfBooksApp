@@ -5,21 +5,32 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import java.util.Objects;
 
 public class LoginActivity extends AppCompatActivity {
 
-    private static final String FILE_EMAIL = "Rememberme";
+    private static final String FILE_EMAIL = "Remember me";
+    private static final String TAG ="MainActivity" ;
+    private FirebaseAuth mAuth;
+// ...
+// Initialize Firebase Auth
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +50,9 @@ public class LoginActivity extends AppCompatActivity {
         EditText passwordinput = findViewById(R.id.Password_input);
         Button signbtn = findViewById(R.id.signin_btn);
         CheckBox rememberbox = findViewById(R.id.remember_me);
+        TextView forgotpassword=findViewById(R.id.forgotpassword_textview);
         FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
+        mAuth = FirebaseAuth.getInstance();
 
 
 
@@ -68,7 +81,8 @@ public class LoginActivity extends AppCompatActivity {
                         editor.apply();
                         StoreDataUsingSharedPref(email, password);
 
-                    } else {
+                    }
+                    else {
                         getSharedPreferences(FILE_EMAIL, MODE_PRIVATE).edit().clear().apply();
                     }
                     if (TextUtils.isEmpty(password)) {
@@ -87,6 +101,7 @@ public class LoginActivity extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             Toast.makeText(LoginActivity.this, "Logged in Successfully", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                            finish();
                         } else {
                             Toast.makeText(LoginActivity.this, "Error ! " + Objects.requireNonNull(task.getException()).getMessage(), Toast.LENGTH_SHORT).show();
 
@@ -99,9 +114,32 @@ public class LoginActivity extends AppCompatActivity {
                 }
 
         );
+        forgotpassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(LoginActivity.this,ForgotPasswordActivity.class);
+                startActivity(intent);
+
+            }
+        });
 
 
     }
+    @Override
+    public void onStart() {
+        super.onStart();
+        // Check if user is signed in (non-null) and update UI accordingly.
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+        if(currentUser != null){
+            Intent intent=new Intent(LoginActivity.this,MainActivity.class);
+            startActivity(intent);
+            reload();
+        }
+    }
+
+    private void reload() {
+    }
+
 
     private void StoreDataUsingSharedPref(String email, String password) {
         SharedPreferences.Editor editor = getSharedPreferences(FILE_EMAIL, MODE_PRIVATE).edit();
